@@ -1,0 +1,34 @@
+SIO Communications Tester v1.0 [2004-09-20] by tyranid, modified by redcoat
+
+forums.ps2dev.org
+Homebrew PS2, PSP & PS3 Development Discussions
+
+EE-SIO rx
+
+forums.ps2dev.org Forum Index -> PS2 Development
+
+apache37
+Joined: 04 Jun 2004
+Posts: 76
+PostPosted: Tue Sep 21, 2004 11:01
+
+Hello, 
+
+I've built and installed the ps2 ee-sio per mrbrowns instructions. The tx works fine and I can see the messages pop thru securecrt and within my own code. The probelem I have is how to really test the rx side. I've looked through the other thread on the serial cable and are pretty sure I'm on the right via (directly below the tx). 
+
+Can someone provide a small code snippet on how to test? I've used sio_getc() and seems to return just (...). Right now I'm typing into the terminal app and trying to echo the input thru serial via printf to inlink. 
+
+Thanks in advance :)
+
+redcoat
+Joined: 11 Aug 2004
+Posts: 21
+PostPosted: Tue Sep 21, 2004 6:53 pm
+
+I don't claim to be an expert, but I've had a lot of experience with the SIO board over the last several days. 
+
+(...)
+Sure, see the code and makefile (...). My thanks to "tyranid" for sending the original code to me ;) 
+(...)
+
+Haven't tried "ps2siotest.elf" with InLink, only with ps2client, but I suspect that it will work. 
